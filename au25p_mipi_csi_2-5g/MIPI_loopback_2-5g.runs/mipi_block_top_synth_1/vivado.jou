@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2_AR000035847 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Feb  6 11:03:35 2024
+# Process ID: 21888
+# Current directory: C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/mipi_block_top_synth_1
+# Command line: vivado.exe -log mipi_block_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mipi_block_top.tcl
+# Log file: C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/mipi_block_top_synth_1/mipi_block_top.vds
+# Journal file: C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/mipi_block_top_synth_1\vivado.jou
+# Running On: ETSB-153, OS: Windows, CPU Frequency: 1996 MHz, CPU Physical cores: 12, Host memory: 15919 MB
+#-----------------------------------------------------------
+source mipi_block_top.tcl -notrace

@@ -1,0 +1,63 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.685146",
+   "Default View_TopLeft":"-683,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace port mipi_phy_if -pg 1 -lvl 0 -x 0 -y 1190 -defaultsOSRD
+preplace port csirxss_s_axi -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port video_out -pg 1 -lvl 3 -x 940 -y 600 -defaultsOSRD
+preplace port port-id_lite_aclk -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace port port-id_lite_aresetn -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
+preplace port port-id_dphy_clk_200M -pg 1 -lvl 0 -x 0 -y 1210 -defaultsOSRD
+preplace port port-id_rxbyteclkhs -pg 1 -lvl 3 -x 940 -y 1180 -defaultsOSRD
+preplace port port-id_clkoutphy_out -pg 1 -lvl 3 -x 940 -y 1220 -defaultsOSRD
+preplace port port-id_system_rst_out -pg 1 -lvl 3 -x 940 -y 1260 -defaultsOSRD
+preplace port port-id_pll_lock_out -pg 1 -lvl 3 -x 940 -y 1240 -defaultsOSRD
+preplace port port-id_rxbyteclkhs_cnts_out -pg 1 -lvl 3 -x 940 -y 1200 -defaultsOSRD
+preplace port port-id_ext_mmcm_clk_out -pg 1 -lvl 3 -x 940 -y 1140 -defaultsOSRD
+preplace port port-id_ext_mmcm_lock_out -pg 1 -lvl 3 -x 940 -y 1160 -defaultsOSRD
+preplace port port-id_csirxss_csi_irq -pg 1 -lvl 3 -x 940 -y 280 -defaultsOSRD
+preplace port port-id_video_aclk -pg 1 -lvl 0 -x 0 -y 270 -defaultsOSRD
+preplace port port-id_video_aresetn -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace inst r_sync -pg 1 -lvl 1 -x 310 -y 1310 -defaultsOSRD
+preplace inst vfb_sync -pg 1 -lvl 2 -x 670 -y 940 -defaultsOSRD
+preplace inst rx -pg 1 -lvl 1 -x 310 -y 260 -defaultsOSRD
+preplace inst phy -pg 1 -lvl 2 -x 670 -y 1210 -defaultsOSRD
+preplace inst vfb_0 -pg 1 -lvl 2 -x 670 -y 690 -defaultsOSRD
+preplace netloc phy_dl0_rxskewcalhs 1 0 3 50 1060 NJ 1060 840
+preplace netloc rx_interrupt 1 1 2 NJ 280 NJ
+preplace netloc phy_rxbyteclkhs 1 0 3 60 1050 NJ 1050 910
+preplace netloc dphy_clk_200M_1 1 0 2 20 1210 N
+preplace netloc video_aresetn_1 1 0 2 30 730 500
+preplace netloc r_sync_peripheral_reset 1 1 1 500 1230n
+preplace netloc lite_aclk_1 1 0 1 NJ 150
+preplace netloc lite_aresetn_1 1 0 1 NJ 170
+preplace netloc vfb_0_vfb_full 1 0 3 30 10 NJ 10 840
+preplace netloc vfb_0_vfb_wc_full 1 0 3 130 20 NJ 20 910
+preplace netloc vfb_0_core_men_ack_vfb 1 0 3 140 30 NJ 30 920
+preplace netloc rx_core_men_vfb 1 1 1 490 260n
+preplace netloc vfb_0_mdt_tv 1 0 3 140 490 NJ 490 860
+preplace netloc vfb_0_mdt_tr 1 0 3 130 500 NJ 500 880
+preplace netloc vfb_0_sdt_tv 1 0 3 120 510 NJ 510 890
+preplace netloc vfb_0_sdt_tr 1 0 3 110 520 NJ 520 900
+preplace netloc vfb_0_vfb_tv 1 0 3 90 540 NJ 540 850
+preplace netloc vfb_0_vfb_tr 1 0 3 100 530 NJ 530 870
+preplace netloc phy_rxbyteclkhs_cnts 1 0 3 80 550 480 840 920
+preplace netloc video_aclk_1 1 0 2 40 720 NJ
+preplace netloc phy_ext_mmcm_clk_out 1 2 1 NJ 1140
+preplace netloc phy_ext_mmcm_lock_out 1 2 1 NJ 1160
+preplace netloc phy_clkoutphy_out 1 2 1 NJ 1220
+preplace netloc phy_system_rst_out 1 2 1 NJ 1260
+preplace netloc phy_pll_lock_out 1 2 1 NJ 1240
+preplace netloc csirxss_s_axi_1 1 0 1 NJ 90
+preplace netloc phy_rx_mipi_ppi_if 1 0 3 70 1040 NJ 1040 850
+preplace netloc rx_m_axis 1 1 1 500 240n
+preplace netloc vfb_0_m_vfb 1 2 1 NJ 600
+preplace netloc mipi_phy_if_1 1 0 2 NJ 1190 NJ
+levelinfo -pg 1 0 310 670 940
+pagesize -pg 1 -db -bbox -sgen -150 0 1140 1400
+"
+}
+0

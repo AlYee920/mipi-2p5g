@@ -1,0 +1,330 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Feb  5 17:27:16 2024
+# Process ID: 3516
+# Current directory: C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10324 C:\Users\Al-YeeTan\Desktop\CSI 2.5G MIPI\au25p_mipi_csi_2-5g\MIPI_loopback_2-5g.xpr
+# Log file: C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/vivado.log
+# Journal file: C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g\vivado.jou
+# Running On: ETSB-153, OS: Windows, CPU Frequency: 1996 MHz, CPU Physical cores: 12, Host memory: 15919 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.xpr}
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -srcset design_1 [get_ips  {design_1_axi_traffic_gen_0_2 design_1_axi_traffic_gen_0_3 design_1_ila_0_1 design_1_clk_wiz_0_0 design_1_axi_traffic_gen_0_0 design_1_axi_interconnect_0_0 design_1_axi_traffic_gen_0_4 design_1_axi_traffic_gen_0_5 mipi_block_top_system_ila_0_1 mipi_block_top_mipi_csi2_rx_subsyst_0_0 mipi_block_top_oddr_0_0 mipi_block_top_smartconnect_0_0 mipi_block_top_axi_traffic_gen_0_0 mipi_block_top_proc_sys_reset_1_0 mipi_block_top_vio_0_1 mipi_block_top_jtag_axi_0_0 mipi_block_top_clk_wiz_0_0 mipi_block_top_proc_sys_reset_0_0 mipi_block_top_mipi_csi2_tx_subsyst_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {design_1_axi_traffic_gen_0_2 design_1_axi_traffic_gen_0_3 design_1_ila_0_1 design_1_clk_wiz_0_0 design_1_axi_traffic_gen_0_0 design_1_axi_interconnect_0_0 design_1_axi_traffic_gen_0_4 design_1_axi_traffic_gen_0_5 mipi_block_top_system_ila_0_1 mipi_block_top_mipi_csi2_rx_subsyst_0_0 mipi_block_top_oddr_0_0 mipi_block_top_smartconnect_0_0 mipi_block_top_axi_traffic_gen_0_0 mipi_block_top_proc_sys_reset_1_0 mipi_block_top_vio_0_1 mipi_block_top_jtag_axi_0_0 mipi_block_top_clk_wiz_0_0 mipi_block_top_proc_sys_reset_0_0 mipi_block_top_mipi_csi2_tx_subsyst_0_0}] -no_script -sync -force -quiet
+update_module_reference [get_ips  mipi_block_top_mipi_top_0_0]
+generate_target all [get_files  {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/bd/mipi_block_top/mipi_block_top.bd}}]
+export_ip_user_files -of_objects [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/bd/mipi_block_top/mipi_block_top.bd}}] -no_script -sync -force -quiet
+reset_run mipi_block_top_synth_1
+launch_runs mipi_block_top_synth_1 -jobs 6
+wait_on_run mipi_block_top_synth_1
+export_simulation -of_objects [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/bd/mipi_block_top/mipi_block_top.bd}}] -directory {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.ip_user_files} -ipstatic_source_dir {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.cache/compile_simlib/modelsim} {questa=C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.cache/compile_simlib/questa} {riviera=C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.cache/compile_simlib/riviera} {activehdl=C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_bd_design [get_bd_designs mipi_block_top]
+delete_bd_objs [get_bd_nets mipi_top_0_mipi_vid_di_tx] [get_bd_nets mipi_top_0_mipi_vid_enable_tx] [get_bd_nets mipi_top_0_mipi_vid_linenum_tx] [get_bd_nets mipi_top_0_mipi_vid_wc_tx] [get_bd_nets mipi_top_0_mipi_vid_framenum_tx] [get_bd_nets mipi_top_0_mipi_vid_vc_tx] [get_bd_intf_nets mipi_csi2_tx_subsyst_0_mipi_phy_if] [get_bd_intf_nets smartconnect_0_M01_AXI] [get_bd_cells mipi_csi2_tx_subsyst_0]
+delete_bd_objs [get_bd_intf_ports mipi_phy_if_0]
+delete_bd_objs [get_bd_nets clk_wiz_0_dbg_clk]
+connect_bd_net [get_bd_pins system_ila_0/clk] [get_bd_pins clk_wiz_0/vid_clk]
+delete_bd_objs [get_bd_nets mipi_top_0_mipi_vid_hsync_tx]
+delete_bd_objs [get_bd_nets mipi_top_0_mipi_vid_vsync_tx]
+delete_bd_objs [get_bd_nets mipi_top_0_mipi_vid_pixeldata_tx]
+startgroup
+set_property CONFIG.C_NUM_OF_PROBES {5} [get_bd_cells system_ila_0]
+endgroup
+connect_bd_net [get_bd_pins mipi_top_0/golden_data] [get_bd_pins system_ila_0/probe1]
+connect_bd_net [get_bd_pins mipi_top_0/rx_unpack_data_1P] [get_bd_pins system_ila_0/probe2]
+connect_bd_net [get_bd_pins mipi_csi2_rx_subsyst_0/frame_rcvd_pulse_out] [get_bd_pins system_ila_0/probe3]
+save_bd_design
+update_module_reference mipi_block_top_mipi_top_0_0
+startgroup
+set_property CONFIG.NUM_MI {1} [get_bd_cells smartconnect_0]
+endgroup
+save_bd_design
+regenerate_bd_layout
+reset_run synth_1
+reset_run mipi_block_top_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+startgroup
+set_property -dict [list \
+  CONFIG.C_ATG_SYSTEM_INIT_ADDR_MIF {c:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/bd/mipi_block_top/ip/mipi_block_top_axi_traffic_gen_0_0.coe} \
+  CONFIG.C_ATG_SYSTEM_INIT_DATA_MIF {c:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/bd/mipi_block_top/ip/mipi_block_top_axi_traffic_gen_data.coe} \
+] [get_bd_cells axi_traffic_gen_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/axi-traffic-gen-master/axi-traffic-gen-master/addr.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/mipi_csi2_tx_subsystem_2_ex/mipi_csi2_tx_subsystem_2_ex.srcs/sources_1/imports/imports/addr.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/mipi_csi2_tx_subsystem_2_ex/imports/addr2.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/axi-traffic-gen-master/axi-traffic-gen-master/data.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/mipi_csi2_tx_subsystem_2_ex/mipi_csi2_tx_subsystem_2_ex.srcs/sources_1/imports/imports/data.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/mipi_csi2_tx_subsystem_2_ex/imports/data2.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/axi-traffic-gen-master/axi-traffic-gen-master/addr.coe} {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/mipi_csi2_tx_subsystem_2_ex/mipi_csi2_tx_subsystem_2_ex.srcs/sources_1/imports/imports/addr.coe} {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/mipi_csi2_tx_subsystem_2_ex/imports/addr2.coe} {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/axi-traffic-gen-master/axi-traffic-gen-master/data.coe} {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/mipi_csi2_tx_subsystem_2_ex/mipi_csi2_tx_subsystem_2_ex.srcs/sources_1/imports/imports/data.coe} {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/mipi_csi2_tx_subsystem_2_ex/imports/data2.coe}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/imports/hdl/design_1_wrapper.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v} {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/imports/hdl/design_1_wrapper.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/imports/panel/IPhone_7p_1080p_reg.mem}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/imports/panel/IPhone_7p_cmd.mem}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/imports/panel/IPhone_7p_1080p_reg.mem} {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/imports/panel/IPhone_7p_cmd.mem}}
+open_bd_design {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/bd/design_1/design_1.bd}
+export_ip_user_files -of_objects  [get_files {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/bd/design_1/design_1.bd}}] -no_script -reset -force -quiet
+remove_files  -fileset design_1 {{C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/bd/design_1/design_1.bd}}
+file delete -force {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.ip_user_files/bd/design_1} {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.ip_user_files/sim_scripts/design_1}
+current_bd_design [get_bd_designs mipi_block_top]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 u_ila_1 u_ila_2 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 8192 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 8192 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+connect_debug_port u_ila_0/clk [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_782c_phy_0_rx_support_i/rxbyteclkhs ]]
+connect_debug_port u_ila_1/clk [get_nets [list mipi_block_top_i/clk_wiz_0/inst/dphy ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXDATAHS[0]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXDATAHS[1]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXDATAHS[2]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXDATAHS[3]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXDATAHS[4]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXDATAHS[5]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXDATAHS[6]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXDATAHS[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXDATAHS[0]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXDATAHS[1]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXDATAHS[2]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXDATAHS[3]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXDATAHS[4]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXDATAHS[5]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXDATAHS[6]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXDATAHS[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXDATAHS[0]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXDATAHS[1]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXDATAHS[2]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXDATAHS[3]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXDATAHS[4]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXDATAHS[5]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXDATAHS[6]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXDATAHS[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXDATAHS[0]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXDATAHS[1]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXDATAHS[2]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXDATAHS[3]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXDATAHS[4]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXDATAHS[5]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXDATAHS[6]} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXDATAHS[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXACTIVEHS ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXVALIDHS ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXACTIVEHS ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXVALIDHS ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXACTIVEHS ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXVALIDHS ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXACTIVEHS ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXVALIDHS ]]
+set_property port_width 1 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_STOPSTATE ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_STOPSTATE ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe2]
+connect_debug_port u_ila_1/probe2 [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_STOPSTATE ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe3]
+connect_debug_port u_ila_1/probe3 [get_nets [list mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_STOPSTATE ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+writehw -help
+write_hwdef -help
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+refresh_hw_device [lindex [get_hw_devices xcau25p_0] 0]
+set_property PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property FULL_PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property PROGRAM.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.bit} [get_hw_devices xcau25p_0]
+program_hw_devices [get_hw_devices xcau25p_0]
+refresh_hw_device [lindex [get_hw_devices xcau25p_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXACTIVEHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXDATAHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXVALIDHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXACTIVEHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXDATAHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXVALIDHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXACTIVEHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXDATAHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXVALIDHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXACTIVEHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXDATAHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXVALIDHS} }
+add_wave -into {hw_ila_data_3.wcfg} -radix hex { {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_STOPSTATE} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_STOPSTATE} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_STOPSTATE} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_STOPSTATE} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_STOPSTATE -of_objects [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+create_hw_axi_txn rxrd1 [get_hw_axis hw_axi_1] -address 44A20000 -type read
+create_hw_axi_txn rxrd2 [get_hw_axis hw_axi_1] -address 44A20004 -type read
+create_hw_axi_txn rxrd3 [get_hw_axis hw_axi_1] -address 44A20010 -type read
+create_hw_axi_txn rxrd4 [get_hw_axis hw_axi_1] -address 44A20020 -type read
+create_hw_axi_txn rxrd5 [get_hw_axis hw_axi_1] -address 44A20024 -type read
+create_hw_axi_txn rxrd6 [get_hw_axis hw_axi_1] -address 44A20030 -type read
+create_hw_axi_txn rxrd7 [get_hw_axis hw_axi_1] -address 44A2003C -type read
+create_hw_axi_txn rxrd8 [get_hw_axis hw_axi_1] -address 44A20040 -type read
+create_hw_axi_txn rxrd9 [get_hw_axis hw_axi_1] -address 44A20044 -type read
+create_hw_axi_txn rxrd10 [get_hw_axis hw_axi_1] -address 44A20048 -type read
+create_hw_axi_txn rxrd11 [get_hw_axis hw_axi_1] -address 44A2004C -type read
+create_hw_axi_txn rxrd12 [get_hw_axis hw_axi_1] -address 44A20060 -type read
+create_hw_axi_txn rxrd13 [get_hw_axis hw_axi_1] -address 44A20064 -type read
+create_hw_axi_txn rxrd14 [get_hw_axis hw_axi_1] -address 44A20068 -type read
+create_hw_axi_txn rxrd15 [get_hw_axis hw_axi_1] -address 44A2006C -type read
+create_hw_axi_txn rxrd16 [get_hw_axis hw_axi_1] -address 44A20070 -type read
+create_hw_axi_txn rxrd17 [get_hw_axis hw_axi_1] -address 44A20074 -type read
+create_hw_axi_txn rxrd18 [get_hw_axis hw_axi_1] -address 44A20078 -type read
+create_hw_axi_txn rxrd19 [get_hw_axis hw_axi_1] -address 44A2007C -type read
+create_hw_axi_txn rxdphyrd1 [get_hw_axis hw_axi_1] -address 44A21000 -type read
+create_hw_axi_txn rxdphyrd2 [get_hw_axis hw_axi_1] -address 44A21004 -type read
+create_hw_axi_txn rxdphyrd3 [get_hw_axis hw_axi_1] -address 44A21008 -type read
+create_hw_axi_txn rxdphyrd4 [get_hw_axis hw_axi_1] -address 44A21018 -type read
+create_hw_axi_txn rxdphyrd5 [get_hw_axis hw_axi_1] -address 44A2101C -type read
+create_hw_axi_txn rxdphyrd6 [get_hw_axis hw_axi_1] -address 44A21020 -type read
+create_hw_axi_txn rxdphyrd7 [get_hw_axis hw_axi_1] -address 44A21024 -type read
+create_hw_axi_txn rxdphyrd8 [get_hw_axis hw_axi_1] -address 44A21028 -type read
+create_hw_axi_txn rxwr5 [get_hw_axis hw_axi_1] -address 44A20024 -type write -data B87E3FFF
+run_hw_axi [get_hw_axi_txns -filter {TYPE==WRITE}] [get_hw_axi_txns -filter {TYPE==READ}]
+set_msg_config -id {[Labtoolstcl 44-481]} -limit 10000
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_STOPSTATE -of_objects [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_STOPSTATE -of_objects [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_STOPSTATE -of_objects [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_STOPSTATE -of_objects [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_STOPSTATE -of_objects [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]]
+open_bd_design {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/bd/mipi_block_top/mipi_block_top.bd}
+disconnect_bd_net /clk_wiz_0_vid_clk [get_bd_pins system_ila_0/clk]
+connect_bd_net [get_bd_pins system_ila_0/clk] [get_bd_pins clk_wiz_0/dbg_clk]
+save_bd_design
+reset_run synth_1
+reset_run mipi_block_top_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close_design
+set_property PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property FULL_PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property PROGRAM.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.bit} [get_hw_devices xcau25p_0]
+program_hw_devices [get_hw_devices xcau25p_0]
+refresh_hw_device [lindex [get_hw_devices xcau25p_0] 0]
+set_property PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property FULL_PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property PROGRAM.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.bit} [get_hw_devices xcau25p_0]
+program_hw_devices [get_hw_devices xcau25p_0]
+refresh_hw_device [lindex [get_hw_devices xcau25p_0] 0]
+open_bd_design {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/bd/mipi_block_top/mipi_block_top.bd}
+open_run synth_1 -name synth_1
+set_property PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property FULL_PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property PROGRAM.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.bit} [get_hw_devices xcau25p_0]
+program_hw_devices [get_hw_devices xcau25p_0]
+refresh_hw_device [lindex [get_hw_devices xcau25p_0] 0]
+set_property PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property FULL_PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property PROGRAM.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.bit} [get_hw_devices xcau25p_0]
+program_hw_devices [get_hw_devices xcau25p_0]
+refresh_hw_device [lindex [get_hw_devices xcau25p_0] 0]
+close_hw_manager
+open_bd_design {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/bd/mipi_block_top/mipi_block_top.bd}
+delete_bd_objs [get_bd_nets clk_wiz_0_dbg_clk]
+save_bd_design
+connect_bd_net [get_bd_pins system_ila_0/clk] [get_bd_pins clk_wiz_0/dbg_clk]
+save_bd_design
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {mipi_csi2_rx_subsyst_0_frame_rcvd_pulse_out }]
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { mipi_csi2_rx_subsyst_0_frame_rcvd_pulse_out } ]
+disconnect_bd_net [get_bd_net mipi_csi2_rx_subsyst_0_frame_rcvd_pulse_out] [get_bd_pins system_ila_0/probe3]
+apply_bd_automation -rule xilinx.com:bd_rule:resize [get_bd_cells system_ila_0]
+endgroup
+delete_bd_objs [get_bd_nets mipi_csi2_rx_subsyst_0_frame_rcvd_pulse_out]
+startgroup
+set_property CONFIG.C_NUM_OF_PROBES {6} [get_bd_cells system_ila_0]
+endgroup
+connect_bd_net [get_bd_pins system_ila_0/probe4] [get_bd_pins mipi_csi2_rx_subsyst_0/video_out_tvalid]
+connect_bd_net [get_bd_pins system_ila_0/probe5] [get_bd_pins mipi_csi2_rx_subsyst_0/frame_rcvd_pulse_out]
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {mipi_csi2_rx_subsyst_0_frame_rcvd_pulse_out }]
+save_bd_design
+reset_run synth_1
+reset_run mipi_block_top_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+open_bd_design {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.srcs/sources_1/bd/mipi_block_top/mipi_block_top.bd}
+reset_run impl_1

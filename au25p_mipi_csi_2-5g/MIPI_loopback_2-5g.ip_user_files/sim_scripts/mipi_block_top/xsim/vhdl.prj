@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../bd/mipi_block_top/ip/mipi_block_top_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/sim/bd_782c_r_sync_0.vhd" \
+"../../../bd/mipi_block_top/ip/mipi_block_top_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/sim/bd_782c_vfb_sync_0.vhd" \
+"../../../bd/mipi_block_top/ip/mipi_block_top_proc_sys_reset_0_0/sim/mipi_block_top_proc_sys_reset_0_0.vhd" \
+"../../../bd/mipi_block_top/ip/mipi_block_top_proc_sys_reset_1_0/sim/mipi_block_top_proc_sys_reset_1_0.vhd" \
+"../../../bd/mipi_block_top/ip/mipi_block_top_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_b9b5_psr_aclk_0.vhd" \
+
+# Do not sort compile order
+nosort

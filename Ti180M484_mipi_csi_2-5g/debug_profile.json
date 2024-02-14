@@ -1,0 +1,40 @@
+{
+    "debug_cores": [
+        {
+            "name": "vio0",
+            "type": "vio",
+            "uuid": "45cacc2aca884ad185aea3feabd0d1c1",
+            "probes": [
+                {
+                    "name": "txdata",
+                    "width": 48,
+                    "init": null
+                },
+                {
+                    "name": "rxunpackdata",
+                    "width": 24,
+                    "init": null
+                },
+                {
+                    "name": "rxoutvalid",
+                    "width": 1,
+                    "init": null
+                },
+                {
+                    "name": "rxouths",
+                    "width": 1,
+                    "init": null
+                },
+                {
+                    "name": "error",
+                    "width": 8,
+                    "init": null
+                }
+            ]
+        }
+    ],
+    "session": {
+        "debug_widget": [],
+        "wizard": {}
+    }
+}

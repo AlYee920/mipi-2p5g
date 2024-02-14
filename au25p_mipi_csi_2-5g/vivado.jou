@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2023.2_AR000035847 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Feb  6 15:23:19 2024
+# Process ID: 584
+# Current directory: C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29876 C:\Users\Al-YeeTan\Desktop\CSI 2.5G MIPI\au25p_mipi_csi_2-5g\MIPI_loopback_2-5g.xpr
+# Log file: C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/vivado.log
+# Journal file: C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g\vivado.jou
+# Running On: ETSB-153, OS: Windows, CPU Frequency: 1996 MHz, CPU Physical cores: 12, Host memory: 15919 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.xpr}
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.bit} [get_hw_devices xcau25p_0]
+set_property PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property FULL_PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+current_hw_device [get_hw_devices xcau25p_0]
+refresh_hw_device [lindex [get_hw_devices xcau25p_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_3 -of_objects [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {mipi_block_top_i/system_ila_0/inst/probe3_1} {mipi_block_top_i/system_ila_0/inst/probe1_1} {mipi_block_top_i/system_ila_0/inst/probe5_1} {mipi_block_top_i/system_ila_0/inst/probe0_1} {mipi_block_top_i/system_ila_0/inst/probe4_1} {mipi_block_top_i/system_ila_0/inst/probe2_1} }
+set_property NAME.CUSTOM error_cnt [get_hw_probes mipi_block_top_i/system_ila_0/inst/probe3_1] 
+set_property NAME.CUSTOM golden_data [get_hw_probes mipi_block_top_i/system_ila_0/inst/probe1_1] 
+set_property NAME.CUSTOM mipi_csi2_rx_subsyst_0_frame_rcvd_pulse_out [get_hw_probes mipi_block_top_i/system_ila_0/inst/probe5_1] 
+set_property NAME.CUSTOM mipi_csi2_rx_subsyst_0_video_out_tdata1 [get_hw_probes mipi_block_top_i/system_ila_0/inst/probe0_1] 
+set_property NAME.CUSTOM mipi_csi2_rx_subsyst_0_video_out_tvalid [get_hw_probes mipi_block_top_i/system_ila_0/inst/probe4_1] 
+set_property NAME.CUSTOM mipi_top_0_rx_unpack_data [get_hw_probes mipi_block_top_i/system_ila_0/inst/probe2_1] 
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+save_wave_config {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+save_wave_config {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wcfg}
+set_property OUTPUT_VALUE 0 [get_hw_probes mipi_block_top_i/clk_wiz_0_locked -of_objects [get_hw_vios -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {mipi_block_top_i/clk_wiz_0_locked} -of_objects [get_hw_vios -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes mipi_block_top_i/clk_wiz_0_locked -of_objects [get_hw_vios -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {mipi_block_top_i/clk_wiz_0_locked} -of_objects [get_hw_vios -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/vio_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+add_wave -into {hw_ila_data_3.wcfg} -radix hex { {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_STOPSTATE} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_STOPSTATE} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_STOPSTATE} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_STOPSTATE} }
+add_wave -into {hw_ila_data_2.wcfg} -radix hex { {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXACTIVEHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXDATAHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL0_RXVALIDHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXACTIVEHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXDATAHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL1_RXVALIDHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXACTIVEHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXDATAHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL2_RXVALIDHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXACTIVEHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXDATAHS} {mipi_block_top_i/mipi_csi2_rx_subsyst_0/inst/phy_rx_mipi_ppi_if_DL3_RXVALIDHS} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}] -trigger_now
+set_property PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property FULL_PROBES.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.ltx} [get_hw_devices xcau25p_0]
+set_property PROGRAM.FILE {C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.runs/impl_1/mipi_block_top_wrapper.bit} [get_hw_devices xcau25p_0]
+program_hw_devices [get_hw_devices xcau25p_0]
+refresh_hw_device [lindex [get_hw_devices xcau25p_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"mipi_block_top_i/system_ila_0/inst/ila_lib"}]]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]\
+  [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_0"}]]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xcau25p_0] -filter {CELL_NAME=~"u_ila_1"}]]
+write_hw_ila_data {C:\Users\Al-YeeTan\Desktop\CSI 2.5G MIPI\Waveform\iladata1.ila} hw_ila_data_1
+write_hw_ila_data {C:\Users\Al-YeeTan\Desktop\CSI 2.5G MIPI\Waveform\iladata2.ila} hw_ila_data_2
+write_hw_ila_data {C:\Users\Al-YeeTan\Desktop\CSI 2.5G MIPI\Waveform\iladata3.ila} hw_ila_data_3

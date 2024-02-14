@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Al-YeeTan/Desktop/CSI 2.5G MIPI/au25p_mipi_csi_2-5g/MIPI_loopback_2-5g.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="8,193"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="242"></NameColumnWidth>
+      <ValueColumnWidth column_width="276"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="mipi_block_top_i/system_ila_0/inst/probe3_1" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">mipi_block_top_i/system_ila_0/inst/probe3_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">probe3_1[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">error_cnt</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="mipi_block_top_i/system_ila_0/inst/probe1_1" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">mipi_block_top_i/system_ila_0/inst/probe1_1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">probe1_1[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">golden_data</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="mipi_block_top_i/system_ila_0/inst/probe5_1" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">mipi_block_top_i/system_ila_0/inst/probe5_1</obj_property>
+      <obj_property name="ObjectShortName">probe5_1</obj_property>
+      <obj_property name="label">mipi_csi2_rx_subsyst_0_frame_rcvd_pulse_out</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="mipi_block_top_i/system_ila_0/inst/probe0_1" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">mipi_block_top_i/system_ila_0/inst/probe0_1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">probe0_1[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">mipi_csi2_rx_subsyst_0_video_out_tdata1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="mipi_block_top_i/system_ila_0/inst/probe4_1" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">mipi_block_top_i/system_ila_0/inst/probe4_1</obj_property>
+      <obj_property name="ObjectShortName">probe4_1</obj_property>
+      <obj_property name="label">mipi_csi2_rx_subsyst_0_video_out_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="mipi_block_top_i/system_ila_0/inst/probe2_1" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">mipi_block_top_i/system_ila_0/inst/probe2_1[23:0]</obj_property>
+      <obj_property name="ObjectShortName">probe2_1[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">mipi_top_0_rx_unpack_data</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>
